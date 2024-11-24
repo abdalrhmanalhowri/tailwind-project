@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+            screens: {
+              ipad: "900px",
+            },
+            colors: {
+              page_color: "#4CAF4F",
+              second_color: "#4D4D4D",
+              third: "#F5F7FA",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-inter text-second_color">
+    <header class="">
+      <nav class="w-[90%] flex justify-between items-center p-5 mx-auto">
+        <img src="/public/img/Logo.png" alt="logo" />
+        <ul class="flex gap-5 max-ipad:hidden">
+          <li><a href="">Home</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Feature</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">Testimonial</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+
+        <div class="btn flex gap-5 max-ipad:hidden">
+          <button class="text-page_color">login</button>
+          <button class="bg-page_color p-4 rounded-lg text-white">
+            sign up
+          </button>
+        </div>
+        <img
+          class="w-10 ipad:hidden"
+          src="/public/img/list.svg"
+          alt="sidebar"
+        />
+      </nav>
+    </header>
+    <main class="w-full mt-[50px] space-y-10">
+      <section class="bg-third">
+        <div
+          class="flex flex-row-reverse justify-around items-center max-md:flex-col max-md:items-center w-[85%] m-auto"
+        >
+          <img
+            class="w-[400px] max-md:w-[400px]"
+            src="/public/img/Illustration.svg"
+            alt="img"
+          />
+          <div
+            class="max-md:text-center max-md:items-center flex flex-col gap-5"
+          >
+            <h1 class="text-[64px] font-bold max-ipad:text-[40px]">
+              Lessons and insights <br />
+              <span class="text-page_color">from 8 years</span>
+            </h1>
+            <h3 class="text-[16px] max-ipad:text-[15px]">
+              Where to grow your business as a photographer: site or social
+              media?
+            </h3>
+            <button class="w-[95px] bg-page_color p-4 rounded-lg text-white">
+              Register
+            </button>
+          </div>
+        </div>
+        <div class="p-10 flex justify-center items-center gap-3 max-md:hidden">
+          <div class="h-2 w-2 bg-page_color rounded-full"></div>
+          <div class="h-2 w-2 bg-page_color opacity-30 rounded-full"></div>
+          <div class="h-2 w-2 bg-page_color opacity-30 rounded-full"></div>
+        </div>
+      </section>
+      <section class="w-[85%] m-auto my-10">
+        <div class="flex flex-col items-center">
+          <h2 class="text-[36px] font-bold">Our Clients</h2>
+          <h4 class="text-center">
+            We have been working with some Fortune 500+ clients
+          </h4>
+          <div class="w-full flex justify-between mt-5">
+            <img class="max-sm:w-9" src="/public/img/Group 2249.svg" alt="" />
+            <img class="max-sm:w-9" src="/public/img/Group 2250.svg" alt="" />
+            <img class="max-sm:w-9" src="/public/img/Group 2251.svg" alt="" />
+            <img class="max-sm:w-9" src="/public/img/Group 2252.svg" alt="" />
+            <img class="max-sm:w-9" src="/public/img/Group 2254.svg" alt="" />
+            <img class="max-sm:w-9" src="/public/img/Group 2251.svg" alt="" />
+            <img class="max-sm:w-9" src="/public/img/Group 2250.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="w-[85%] m-auto my-10">
+        <div>
+          <h2 class="text-[36px] font-bold text-center">
+            Manage your entire community <br />in a single system
+          </h2>
+          <h4 class="text-center mt-2">Who is Nextcent suitable for?</h4>
+          <div
+            class="mt-10 flex justify-between max-ipad:flex-col items-center"
+          >
+            <div
+              class="w-[300px] h-[260px] flex flex-col justify-center content-center items-center gap-3 shadow-lg rounded-3xl p-5"
+            >
+              <img class="w-14" src="/public/img/Group 2245.svg" alt="icon" />
+              <h3 class="text-[28px] font-bold text-center">
+                Membership <br />
+                Organisations
+              </h3>
+              <p class="text-center text-[14px]">
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </p>
+            </div>
+            <div
+              class="w-[300px] h-[260px] flex flex-col justify-center content-center items-center gap-3 shadow-lg rounded-3xl p-5"
+            >
+              <img class="w-14" src="/public/img/Icon.svg" alt="icon" />
+              <h3 class="text-[28px] font-bold text-center">
+                National <br />
+                Associations
+              </h3>
+              <p class="text-center text-[14px]">
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </p>
+            </div>
+            <div
+              class="w-[300px] h-[260px] flex flex-col justify-center content-center items-center gap-3 shadow-lg rounded-3xl p-5"
+            >
+              <img class="w-14" src="/public/img/Group 2247.svg" alt="icon" />
+              <h3 class="text-[28px] font-bold text-center">
+                Clubs And <br />Groups
+              </h3>
+              <p class="text-center text-[14px]">
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-[85%] m-auto my-10">
+        <div class="flex justify-around items-center max-ipad:flex-col">
+          <img
+            class="w-[550px] max-ipad:w-[450px]"
+            src="/public/img/Frame 35.png"
+            alt="frame"
+          />
+          <div
+            class="w-[600px] space-y-6 max-ipad:text-center max-ipad:w-[500px] max-sm:w-[350px]"
+          >
+            <h2 class="text-[36px] font-bold text-start max-ipad:text-center">
+              The unseen of spending three years at Pixelgrade
+            </h2>
+            <p class="text-[14px] text-start max-ipad:text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+              Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+              tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+              Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+              elementum pulvinar odio.
+            </p>
+            <button class="w-32 bg-page_color p-4 rounded-lg text-white">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="bg-third my-10 max-sm:h-96">
+        <div
+          class="h-[300px] flex justify-around items-center max-ipad:flex-col space-y-10 w-[85%] m-auto"
+        >
+          <div>
+            <h2 class="text-[36px] font-bold max-ipad:text-center">
+              Helping a local <br />
+              <span class="text-page_color">business reinvent itself</span>
+            </h2>
+            <h3 class="max-ipad:text-center">
+              We reached here with our hard work and dedication
+            </h3>
+          </div>
+          <div class="flex gap-20 max-ipad:gap-5 mt-10">
+            <div class="flex flex-col gap-10">
+              <div class="flex gap-5 items-center">
+                <img
+                  class="max-sm:w-8"
+                  src="/public/img/Group 2233.png"
+                  alt="person"
+                />
+                <div>
+                  <h2 class="text-[28px] font-bold max-sm:text-[18px]">
+                    2,245,341
+                  </h2>
+                  <h3>Members</h3>
+                </div>
+              </div>
+              <div class="flex gap-5 items-center">
+                <img
+                  class="max-sm:w-8"
+                  src="/public/img/Group 2236.png"
+                  alt="Payments"
+                />
+                <div>
+                  <h2 class="text-[28px] font-bold max-sm:text-[18px]">
+                    2,245,341
+                  </h2>
+                  <h3 class="max-sm:text-[14px]">Payments</h3>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10">
+              <div class="flex gap-5 items-center">
+                <img
+                  class="max-sm:w-8"
+                  src="/public/img/Icon-1.png"
+                  alt="Event Bookings"
+                />
+                <div>
+                  <h2 class="text-[28px] font-bold max-sm:text-[18px]">
+                    2,245,341
+                  </h2>
+                  <h3 class="max-sm:text-[14px]">Event Bookings</h3>
+                </div>
+              </div>
+              <div class="flex gap-5 items-center">
+                <img
+                  class="max-sm:w-8"
+                  src="/public/img/Icon.png"
+                  alt="clubs"
+                />
+                <div>
+                  <h2 class="text-[28px] font-bold max-sm:text-[18px]">
+                    2,245,341
+                  </h2>
+                  <h3 class="max-sm:text-[14px]">clubs</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-[85%] m-auto my-10">
+        <div class="flex justify-around items-center max-ipad:flex-col">
+          <img
+            class="w-[500px] max-ipad:w-[400px] max-ipad:mt-16"
+            src="/public/img/pana.svg"
+            alt="frame"
+          />
+          <div
+            class="w-[600px] space-y-6 max-ipad:text-center max-ipad:w-[500px] max-sm:w-[350px]"
+          >
+            <h2 class="text-[36px] font-bold text-start max-ipad:text-center">
+              How to design your site footer like we did
+            </h2>
+            <p class="text-[14px] text-start max-ipad:text-center">
+              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
+              augue nec tincidunt molestie, massa nunc varius arcu, at
+              scelerisque elit erat a magna. Donec quis erat at libero ultrices
+              mollis. In hac habitasse platea dictumst. Vivamus vehicula leo
+              dui, at porta nisi facilisis finibus. In euismod augue vitae nisi
+              ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla
+              commodo faucibus efficitur quis massa. Praesent felis est, finibus
+              et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
+              ipsum id gravida.
+            </p>
+            <button class="w-32 bg-page_color p-4 rounded-lg text-white">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="bg-third">
+        <div
+          class="flex justify-around items-center max-ipad:flex-col mt-10 w-[85%] m-auto my-10 p-10"
+        >
+          <img
+            class="w-[325px] max-ipad:w-[400px]"
+            src="/public/img/image 9.png"
+            alt="frame"
+          />
+          <div
+            class="w-[600px] space-y-3 max-ipad:text-center max-ipad:w-[500px] max-sm:w-[350px]"
+          >
+            <p class="text-[14px] text-start max-ipad:text-center">
+              Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+              lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
+              enim metus. Vivamus sed libero ornare, tristique quam in, gravida
+              enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet
+              elit at ligula molestie, nec molestie mi blandit. Suspendisse
+              cursus tellus sed augue ultrices, quis tristique nulla sodales.
+              Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse
+              potenti. Quisque malesuada enim sapien, vitae placerat ante
+              feugiat eget. Quisque vulputate odio neque, eget efficitur libero
+              condimentum id. Curabitur id nibh id sem dignissim finibus ac sit
+              amet magna.
+            </p>
+            <h2
+              class="text-[20px] text-page_color font-bold text-start max-ipad:text-center"
+            >
+              Tim Smith
+            </h2>
+            <h3>British Dragon Boat Racing Association</h3>
+            <div
+              class="flex gap-20 max-sm:flex-col max-sm:gap-0 max-sm:items-center"
+            >
+              <div class="flex gap-10">
+                <img class="w-9" src="/public/img/Group 2249.svg" alt="" />
+                <img class="w-9" src="/public/img/Group 2250.svg" alt="" />
+                <img class="w-9" src="/public/img/Group 2251.svg" alt="" />
+                <img class="w-9" src="/public/img/Group 2252.svg" alt="" />
+                <img class="w-9" src="/public/img/Group 2254.svg" alt="" />
+              </div>
+              <a
+                href="#"
+                class="text-page_color font-medium mt-2 inline-flex items-center gap-2"
+              >
+                Meet all customers
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-[85%] m-auto my-10 h-[600px] max-ipad:h-[1500px]">
+        <div class="flex flex-col items-center">
+          <h2 class="text-[36px] font-bold text-center">
+            Caring is the new marketing
+          </h2>
+          <h4 class="text-center w-[600px] max-ipad:w-[500px] max-sm:w-[350px]">
+            The Nexcent blog is the best place to read about the latest
+            membership insights, trends and more. See who's joining the
+            community, read about how our community are increasing their
+            membership income and lot's more.​
+          </h4>
+          <div
+            class="flex gap-20 mt-10 max-ipad:flex-col items-center max-ipad:gap-36"
+          >
+            <div class="relative">
+              <img
+                class="w-[370px] relative"
+                src="/public/img/image 18.png"
+                alt=""
+              />
+              <div
+                class="w-[300px] bg-white shadow-2xl rounded-lg p-10 absolute -bottom-20 left-0 right-0 m-auto text-center"
+              >
+                <h3 class="font-bold">
+                  Creating Streamlined Safeguarding Processes with OneRen
+                </h3>
+                <a
+                  href="#"
+                  class="text-page_color font-medium mt-2 inline-flex items-center gap-2"
+                >
+                  Read more
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+            <div class="relative">
+              <img
+                class="w-[370px] relative"
+                src="/public/img/image 19.png"
+                alt=""
+              />
+              <div
+                class="w-[300px] bg-white shadow-2xl rounded-lg p-10 absolute -bottom-20 left-0 right-0 m-auto text-center"
+              >
+                <h3 class="font-bold">
+                  What are your safeguarding responsibilities and how can you
+                  manage them?
+                </h3>
+                <a
+                  href="#"
+                  class="text-page_color font-medium mt-2 inline-flex items-center gap-2"
+                >
+                  Read more
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+            <div class="relative">
+              <img
+                class="w-[370px] relative"
+                src="/public/img/image 20.png"
+                alt=""
+              />
+              <div
+                class="w-[300px] bg-white shadow-2xl rounded-lg p-10 absolute -bottom-20 left-0 right-0 m-auto text-center"
+              >
+                <h3 class="font-bold">
+                  Revamping the Membership Model with Triathlon Australia
+                </h3>
+                <a
+                  href="#"
+                  class="text-page_color font-medium mt-2 inline-flex items-center gap-2"
+                >
+                  Read more
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-third">
+        <div class="flex flex-col items-center gap-10 p-10 w-[85%] m-auto">
+          <h1
+            class="text-7xl font-black text-center leading-[1.2] max-sm:text-5xl"
+          >
+            Pellentesque suscipit <br />fringilla libero eu.
+          </h1>
+          <button class="w-[150px] bg-page_color p-4 rounded-lg text-white">
+            Get a Demo <span>→</span>
+          </button>
+        </div>
+      </section>
+      <section class="bg-[#263238]">
+        <div
+          class="w-[85%] m-auto p-16 flex gap-10 justify-between items-center max-ipad:flex-col max-ipad:gap-10"
+        >
+          <div class="flex flex-col justify-start items-start gap-8">
+            <img src="/public/img/Logo-white.svg" alt="logo" />
+            <p class="text-[14px] text-white leading-loose">
+              Copyright © 2020 Nexcent ltd. <br />All rights reserved
+            </p>
+            <div class="flex gap-4">
+              <a href=""
+                ><img src="/public/img/Footer/Social Icons.svg" alt="" /></a
+              ><a href=""
+                ><img src="/public/img/Footer/Social Icons-1.svg" alt="" /></a
+              ><a href=""
+                ><img src="/public/img/Footer/Social Icons-2.svg" alt="" /></a
+              ><a href=""
+                ><img src="/public/img/Footer/Social Icons-3.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="flex gap-32 max-ipad:flex-col max-ipad:gap-10">
+            <div class="text-white">
+              <h2 class="font-black mb-5">Company</h2>
+              <ul class="text-gray-300 leading-loose">
+                <li><a href="">About us</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Testimonials</a></li>
+              </ul>
+            </div>
+            <div class="text-white">
+              <h2 class="font-black mb-5">Support</h2>
+              <ul class="text-gray-300 leading-loose">
+                <li><a href="">Help center</a></li>
+                <li><a href="">Terms of service</a></li>
+                <li><a href="">Legal</a></li>
+                <li><a href="">Privacy policy</a></li>
+                <li><a href="">Status</a></li>
+              </ul>
+            </div>
+            <form class="text-white">
+              <h2 class="font-black mb-5">Stay up to data</h2>
+              <div class="relative">
+                <input
+                  class="bg-gray-500 rounded-lg h-8 relative p-2"
+                  type="text"
+                  name="email"
+                  placeholder="Your email address"
+                />
+                <button class="absolute right-2 bottom-2" type="submit">
+                  <img src="/public/img/send.svg" alt="" />
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
